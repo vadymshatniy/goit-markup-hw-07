@@ -18,22 +18,86 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!-- <header>
+		<header>
 			<div class="container header-nav">
 				<a href="/" class="logo-header">Web<span class="logo-header-studio">studio</span></a>
-				<nav>
-					<ul class="site-nav">
-						<li class="item"><a class="link current" href="./index.html" class="link">Studio</a></li>
-						<li class="item"><a class="link" href="./portfolio.html" class="link">Portfolio</a></li>
-						<li class="item"><a class="link" href="" class="link">Contacts</a></li>
+				<button type="button" class="mobile-menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg width="32" height="22" class="mobile-burger-svg" aria-label="Mobile menu button">
+						<use class="icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+					</svg>
+				</button>
+
+				<div class="mobile-menu js-menu-container" id="mobile-menu">
+					<button class="mobile-menu-close-btn js-close-menu" type="button" aria-label="Button close mobile menu">
+						<svg class="button-cross" width="8" height="8"><use href="./images/icons.svg#icon-modal-cross"></use></svg>
+					</button>
+
+					<ul class="mobile-menu-list list">
+						<li class="mobile-menu-item">
+							<a class="mobile-menu-link mobile-current link" href="./index.html">Studio</a>
+						</li>
+						<li class="mobile-menu-item">
+							<a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+						</li>
+						<li class="mobile-menu-item">
+							<a class="mobile-menu-link link" href="">Contacts</a>
+						</li>
 					</ul>
-				</nav>
-				<ul class="contact-nav">
-					<li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-				</ul>
+
+					<div>
+						<ul class="mobile-menu-contact list">
+							<li class="mobile-menu-contact-item">
+								<a class="mobile-menu-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+							</li>
+							<li class="mobile-menu-contact-item">
+								<a class="mobile-menu-email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-social-list">
+							<li class="mobile-item-social">
+								<a class="link-social team" href="">
+									<svg width="24" height="24">
+										<use href="./images/icons.svg#icon-icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-item-social">
+								<a class="link-social team" href="">
+									<svg width="24" height="24">
+										<use href="./images/icons.svg#icon-icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-item-social">
+								<a class="link-social team" href="">
+									<svg width="24" height="24">
+										<use href="./images/icons.svg#icon-icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="mobile-item-social">
+								<a class="link-social team" href="">
+									<svg width="24" height="24">
+										<use href="./images/icons.svg#icon-icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</header> -->
+			<nav class="main-nav">
+				<ul class="site-nav">
+					<li class="item"><a class="link current" href="./index.html" class="link">Studio</a></li>
+					<li class="item"><a class="link" href="./portfolio.html" class="link">Portfolio</a></li>
+					<li class="item"><a class="link" href="" class="link">Contacts</a></li>
+				</ul>
+			</nav>
+			<ul class="contact-nav">
+				<li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+			</ul>
+		</header>
 
 		<main>
 			<!--Hero-->
@@ -94,13 +158,40 @@
 					<h2 class="section-title">What Are We Doing</h2>
 					<ul class="section-list">
 						<li class="item-what"
-							><img class="img-block" width="360" height="300" src="./images/computer.jpg" alt="computer"
+							><img
+								class="img-block"
+								width="360"
+								height="300"
+								srcset="
+									./images/03_desktop/what-are-we-doing/computer.jpg    1x,
+									./images/03_desktop/what-are-we-doing/computer@2x.jpg 2x
+								"
+								src="./images/03_desktop/what-are-we-doing/computer.jpg"
+								alt="computer"
 						/></li>
 						<li class="item-what"
-							><img class="img-block" width="360" height="300" src="./images/smartphones.jpg" alt="smartphones"
+							><img
+								class="img-block"
+								width="360"
+								height="300"
+								srcset="
+									./images/03_desktop/what-are-we-doing/smartphones.jpg    1x,
+									./images/03_desktop/what-are-we-doing/smartphones@2x.jpg 2x
+								"
+								src="./images/03_desktop/what-are-we-doing/smartphones.jpg"
+								alt="smartphones"
 						/></li>
 						<li class="item-what"
-							><img class="img-block" width="360" height="300" src="./images/workplace.jpg" alt="workplace"
+							><img
+								class="img-block"
+								width="360"
+								height="300"
+								srcset="
+									./images/03_desktop/what-are-we-doing/workplace.jpg    1x,
+									./images/03_desktop/what-are-we-doing/workplace@2x.jpg 2x
+								"
+								src="./images/03_desktop/what-are-we-doing/workplace.jpg"
+								alt="workplace"
 						/></li>
 					</ul>
 				</div>
@@ -112,7 +203,14 @@
 					<h2 class="section-title">Our Team</h2>
 					<ul class="section-list">
 						<li class="item-team">
-							<img class="img-block" width="264" height="260" src="./images/mark.jpg" alt="photo of Mark" />
+							<img
+								class="img-block"
+								width="264"
+								height="260"
+								srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
+								src="./images/team/mark.jpg"
+								alt="photo of Mark"
+							/>
 							<div class="ourteam-person">
 								<h3 class="item-team-title">Mark Guerrero</h3>
 								<p class="item-team-text">Product Designer</p>
@@ -149,7 +247,14 @@
 							</div>
 						</li>
 						<li class="item-team">
-							<img class="img-block" width="264" height="260" src="./images/tom.jpg" alt="photo of Tom" />
+							<img
+								class="img-block"
+								width="264"
+								height="260"
+								srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
+								src="./images/team/tom.jpg"
+								alt="photo of Tom"
+							/>
 							<div class="ourteam-person">
 								<h3 class="item-team-title">Tom Ford</h3>
 								<p class="item-team-text">Frontend Developer</p>
@@ -178,7 +283,14 @@
 							</div>
 						</li>
 						<li class="item-team">
-							<img class="img-block" width="264" height="260" src="./images/camila.jpg" alt="photo of Camila" />
+							<img
+								class="img-block"
+								width="264"
+								height="260"
+								srcset="./images/team/camila.jpg 1x, ./images/team/camila@2x.jpg 2x"
+								src="./images/team/camila.jpg"
+								alt="photo of Camila"
+							/>
 							<div class="ourteam-person">
 								<h3 class="item-team-title">Camila Garcia</h3>
 								<p class="item-team-text">Marketing</p>
@@ -207,7 +319,14 @@
 							</div>
 						</li>
 						<li class="item-team">
-							<img class="img-block" width="264" height="260" src="./images/daniel.jpg" alt="photo of Daniel" />
+							<img
+								class="img-block"
+								width="264"
+								height="260"
+								srcset="./images/team/daniel.jpg 1x, ./images/team/daniel@2x.jpg 2x"
+								src="./images/team/daniel.jpg"
+								alt="photo of Daniel"
+							/>
 							<div class="ourteam-person">
 								<h3 class="item-team-title">Daniel Wilson</h3>
 								<p class="item-team-text">UI Designer</p>
@@ -394,6 +513,12 @@
 				</form>
 			</div>
 		</div>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
 	</body>
