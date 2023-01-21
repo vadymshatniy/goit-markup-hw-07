@@ -123,14 +123,14 @@ header {
     padding-right: 40px;
     padding-bottom: 40px;
     z-index: 999;
-    width: 428px;
+    width: 100%;
     height: 100%;
     background-color: var(--secondary-color);
     overflow: auto;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
-@media screen and (min-width: 429px) {
+@media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
